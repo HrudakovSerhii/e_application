@@ -1,0 +1,12 @@
+// Necessary for the webpack build
+@font-face {
+  font-family: "Walsheim";
+  src: url("../assets/fonts/GT-Walsheim-Pro-Regular-subset.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Walsheim";
+  src: url("../assets/fonts/GT-Walsheim-Pro-Bold-subset.woff") format("woff");
+  font-weight: 700;
+}

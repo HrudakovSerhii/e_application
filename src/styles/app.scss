@@ -1,0 +1,30 @@
+@import "src/styles/variables";
+@import "common";
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.centerContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: $max-view-width;
+  padding: var(--spacer-4);
+}
+
+.compareOptionsContainer {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: $min-compare-options-width auto;
+  align-items: stretch;
+  border-top: 1px $gray solid;
+}

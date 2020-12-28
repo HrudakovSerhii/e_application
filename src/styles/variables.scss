@@ -1,0 +1,40 @@
+
+// colors
+$black: #202023;
+$gray-light: #f4f4f4;
+$gray: #c4c4c4;
+$white: #fff;
+$blue-light: #0144c5;
+
+$base-font-color: $black;
+
+// typography
+$base-font-family: "Walsheim";
+$base-font-size: 14px;
+$small-font-size: 0.875rem;
+$base-line-height: 1.25rem;
+
+$h2-font-size: $base-font-size * 2;
+$h4-font-size: $base-font-size * 1.2;
+
+$normal-font-weight: 500;
+$bold-font-weight: 700;
+
+// container
+$product-item-min-width: 250px;
+$product-item-max-width: 320px;
+$product-image-width: 200px;
+$min-compare-options-width: 270px;
+$max-view-width: 1300px;
+
+// Icons
+$icon-size: 30px;
+
+:root {
+  // spacing
+  --base-font-size: 14px;
+  --spacer-1: calc(var(--base-font-size) / 2);
+  --spacer-2: calc(var(--base-font-size));
+  --spacer-4: calc(var(--base-font-size) * 2);
+}
+

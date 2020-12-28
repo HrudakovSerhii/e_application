@@ -1,0 +1,14 @@
+@import "src/styles/variables";
+@import "src/styles/common";
+
+.badgeList {
+  display: flex;
+  padding: var(--spacer-1);
+  border-bottom: 1px solid $gray-light;
+
+  .badge {
+    width: $icon-size;
+    height: $icon-size;
+    margin: 0 calc(var(--spacer-1) / 2);
+  }
+}

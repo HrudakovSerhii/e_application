@@ -1,0 +1,69 @@
+@import "src/styles/variables";
+
+.productItem {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  min-width: $product-item-min-width;
+  max-width: $product-item-max-width;
+
+  .header {
+    border-bottom: $gray-light solid 1px;
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+    align-items: start;
+    height: 100%;
+
+    .removeItemContainer {
+      display: flex;
+      justify-content: flex-end;
+      padding: var(--spacer-2);
+
+      .removeIcon {
+        background-image: url("../../../assets/images/remove_icon.jpeg");
+        background-size: cover;
+        width: $icon-size / 2;
+        height: $icon-size / 2;
+        cursor: pointer;
+      }
+
+      &.disableRemove {
+        .removeIcon {
+          cursor: default;
+          opacity: 0.6;
+        }
+      }
+    }
+
+    .imageContainer {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      padding-bottom: var(--spacer-4);
+    }
+
+    .productItemTitle {
+      grid-row: 3;
+      color: $blue-light;
+      font-weight: $bold-font-weight;
+      padding: var(--spacer-2);
+    }
+
+    .priceContainer {
+      padding-left: var(--spacer-2);
+      padding-bottom: var(--spacer-2);
+      align-self: end;
+
+      .productItemPrice {
+        font-weight: $bold-font-weight;
+      }
+
+      span {
+        color: $gray;
+        font-size: $small-font-size;
+      }
+    }
+  }
+}

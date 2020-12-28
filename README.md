@@ -1,1 +1,1 @@
-# e_application
+# compare-product-view

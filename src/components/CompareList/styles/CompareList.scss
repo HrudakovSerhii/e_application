@@ -1,0 +1,28 @@
+@import "src/styles/variables";
+
+.compareList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: var(--spacer-4);
+
+  .title {
+    color: $blue-light;
+    font-weight: $bold-font-weight;
+    padding: var(--spacer-2);
+  }
+
+  .itemContainer {
+    display: flex;
+    flex-direction: row;
+    padding: var(--spacer-1) var(--spacer-2);
+
+    &.active {
+      font-weight: bold;
+    }
+
+    .itemTitle {
+      padding-left: var(--spacer-1);
+    }
+  }
+}
